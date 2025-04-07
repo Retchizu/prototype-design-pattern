@@ -1,19 +1,19 @@
 public class Horse implements Animal{
     private Integer legs;
-    private String sounds;
+    private String sound;
     private String food;
     private String color;
 
-    public Horse(Integer legs, String sounds, String food, String color) {
+    public Horse(Integer legs, String sound, String food, String color) {
         this.legs = legs;
-        this.sounds = sounds;
+        this.sound = sound;
         this.food = food;
         this.color = color;
     }
 
     public Horse(Horse horse) {
         this.legs = horse.legs;
-        this.sounds = horse.sounds;
+        this.sound = horse.sound;
         this.food = horse.food;
         this.color = horse.color;
     }
@@ -27,12 +27,12 @@ public class Horse implements Animal{
         this.legs = legs;
     }
 
-    public String getSounds() {
-        return sounds;
+    public String getsound() {
+        return sound;
     }
 
-    public void setSounds(String sounds) {
-        this.sounds = sounds;
+    public void setsound(String sound) {
+        this.sound = sound;
     }
 
     public String getfood() {
@@ -53,7 +53,7 @@ public class Horse implements Animal{
 
     @Override
     public void makeSound() {
-        System.out.println("Neigghh!");
+        System.out.println(this.sound);
     }
 
     @Override

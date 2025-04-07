@@ -38,7 +38,7 @@ public class Cow implements Animal {
 
     @Override
     public void makeSound() {
-        System.out.println("MOOOOO!");
+        System.out.println(this.sound);
     }
 
     @Override

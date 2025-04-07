@@ -41,7 +41,7 @@ public class Sheep implements Animal{
     }
     @Override
     public void makeSound() {
-        System.out.println("BAAHH!");
+        System.out.println(this.sound);
     }
     @Override
     public String getType() {
